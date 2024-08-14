@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>LMS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <div class="vu-logo">
+          <img src="assets/VU-logo.webp" alt="VU-logo" id="vu-logo" />
+        </div>
+        <div class="welcome-text">
+          <h2>Welcome to Vishwakarma Library</h2>
+        </div>
+        <div class="welcome-image">
+          <img src="assets/welcome2.png" alt="students-in-lib" />
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="form-section">
+        <h1>Login Now</h1>
+        <form
+          action="https://api.form-data.com/f/bqtxth46icif4r4ot1p5qn"
+          method="post"
+        >
+          <div class="input-group">
+            <div class="input-field">
+              <input type="text" placeholder="Email" required />
+            </div>
+            <div class="input-field">
+              <input type="password" placeholder="Password" required />
+            </div>
+          </div>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"
+          ></div>
+          <p>Already have an account? <a href="index.html">Create Now</a></p>
+          <button type="submit">Login Now</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        .input-field{
+            grid-template:auto!important;
+        }
+    </style>
+  </body>
+</html>
