@@ -29,10 +29,16 @@
         >
           <div class="input-group">
             <div class="input-field">
-              <input type="text" placeholder="Email" required />
+              <div class="form-item">
+                <input type="text" id="email" required />
+                <label for="email">Email</label>
+              </div>
             </div>
             <div class="input-field">
-              <input type="password" placeholder="Password" required />
+              <div class="form-item">
+                <input type="password" id="password" required />
+                <label for="password">Password</label>
+              </div>
             </div>
           </div>
           <div
@@ -46,9 +52,15 @@
     </div>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
-        .input-field{
-            grid-template:auto!important;
-        }
+      .input-field {
+        grid-template: auto !important;
+      }
+      .input-group input {
+        width: 100% !important;
+      }
+      .input-field {
+        display: block !important;
+      }
     </style>
   </body>
 </html>

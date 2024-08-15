@@ -106,6 +106,7 @@ body {
   grid-column: span 2; /* Make the button span both columns */
   margin-top: 20px;
   padding: 10px;
+  font-weight: bold;
   background-color: #053c54;
   color: #ffffff;
   border: none;
@@ -155,4 +156,15 @@ body {
 }
 .form-item input:focus + label {
   color: var(--main-color);
+}
+
+.g-recaptcha iframe {
+  height: 120px !important; /* Adjust height as needed */
+  transform: scale(1, 1); /* Scale the content */
+  transform-origin: 0 0; /* Keep the origin at the top-left */
+}
+
+/* Adjust the parent container height */
+.g-recaptcha {
+  height: 90px; /* Match the height to the iframe */
 }
