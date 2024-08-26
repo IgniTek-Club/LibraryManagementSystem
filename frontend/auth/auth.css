@@ -123,6 +123,7 @@ body {
 .form-item {
   position: relative;
   margin-bottom: 15px;
+  max-width: 395px;
 }
 .form-item input {
   display: block;
@@ -167,4 +168,23 @@ body {
 /* Adjust the parent container height */
 .g-recaptcha {
   height: 90px; /* Match the height to the iframe */
+}
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle-icon i {
+  font-size: 18px;
+  line-height: 1;
+  color: #4D4D4D;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 12px;
+}
+
+.password-toggle-icon i:hover {
+  color: #303030;
 }
