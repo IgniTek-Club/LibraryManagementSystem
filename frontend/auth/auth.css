@@ -38,7 +38,7 @@ body {
 
 .left-panel {
   float: left;
-  color: #ffffff;
+  color: #fefefe;
   margin: 20px 0 0 30px;
   position: absolute;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .right-panel {
-  background-color: #ffffff;
+  background-color: #fefefe;
   color: #303030;
   border-radius: 20px 0 0 20px;
   width: 75%;
@@ -108,7 +108,7 @@ body {
   padding: 10px;
   font-weight: bold;
   background-color: #053c54;
-  color: #ffffff;
+  color: #fefefe;
   border: none;
   border-radius: 10px;
   font-size: 16px;
@@ -145,7 +145,7 @@ body {
   top: 13px;
   left: 10px;
   font-size: 14px;
-  background: #fff;
+  background: #fefefe;
   padding: 0 10px;
   color: #999;
   transition: all 0.3s ease;
@@ -180,11 +180,32 @@ body {
 .password-toggle-icon i {
   font-size: 18px;
   line-height: 1;
-  color: #4D4D4D;
+  color: #4d4d4d;
   transition: color 0.3s ease-in-out;
   margin-bottom: 12px;
 }
 
 .password-toggle-icon i:hover {
   color: #303030;
+}
+
+.policy {
+  position: absolute;
+  bottom: 10px;
+  left: 55%; /* Moves it to the middle horizontally */
+  font-size: 14px;
+}
+
+.policy a {
+  text-decoration: none;
+}
+
+.circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #303030;
+  border-radius: 50%;
+  margin: 0 10px;
+  margin-bottom: 2px;
 }

@@ -15,7 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: var(--text);
+  color: var(--lib);
 }
 
 body {
@@ -35,14 +35,18 @@ body {
 .left-panel {
   float: left;
   background-color: var(--bg-color);
-  max-width: 230px;
+  max-width: 200px;
   color: var(--white);
 }
 
 .right-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--white);
   color: #303030;
   height: 100vh;
+  width: calc(100% - 200px);
   float: right;
 }
 
@@ -51,16 +55,16 @@ body {
   align-items: center;
   position: relative;
   top: 10px;
-  left: 10px;
+  padding-left: 5px;
 }
 
-.text {
+.lib {
   position: relative;
   left: 8px;
 }
 
-.text h2 {
-  font-size: 20px;
+.lib h2 {
+  font-size: 18px;
 }
 
 .profile {
@@ -69,7 +73,7 @@ body {
   flex-wrap: wrap;
   position: relative;
   top: 60px;
-  padding-left: 10px;
+  padding-left: 6px;
   cursor: pointer;
 }
 
@@ -90,7 +94,7 @@ body {
 
 .username p {
   opacity: 0.5;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .option-list {
@@ -105,7 +109,7 @@ body {
   align-items: center;
   height: 60px;
   cursor: pointer;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .menu-item h5 {
@@ -126,4 +130,109 @@ body {
 
 .menu-item:nth-child(6) img {
   width: 37px;
+}
+
+.right-container {
+  width: 90%;
+  height: 90%;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.selection {
+  position: relative;
+  left: 20px;
+}
+
+.selection select {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.selection option {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 15px; /* Change the font size of the options */
+}
+
+.activity-bar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  position: relative;
+  top: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bar-item img {
+  width: 50px;
+  height: auto;
+}
+
+.image img {
+  padding: 7px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.info {
+  position: relative;
+  left: 10px;
+}
+.info h4 {
+  font-weight: 500;
+}
+
+.right-container_1 {
+  display: flex;
+  position: relative;
+  top: 60px;
+}
+
+.borrowed {
+  min-width: 50%;
+  align-items: center;
+  display: flex;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.reload {
+  position: relative;
+  left: 100%;
+}
+
+.head a {
+  color: var(--main-color);
+  text-decoration: none;
+  position: relative;
+  left: 10px;
+}
+
+.reccomended {
+  width: 50%;
+  display: flex;
+}
+
+.reccomended img {
+  display: flex;
+  float: right;
+  width: 25px;
+  height: auto;
 }
