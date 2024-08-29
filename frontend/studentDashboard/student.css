@@ -226,7 +226,7 @@ body {
 .right-container_1 {
   display: flex; /* Change to flex to arrange items horizontally */
   position: relative;
-  top: 60px;
+  top: 40px;
   align-items: flex-start; /* Aligns items to the top */
   width: 100%; /* Occupies full width */
 }
@@ -323,7 +323,7 @@ body {
 
 .book-image img {
   border-radius: 8px;
-  height: 100px;
+  height: 90px;
   width: auto;
 }
 
@@ -347,15 +347,45 @@ body {
 .right-container_2 {
   display: flex; /* Change to flex to arrange items horizontally */
   position: relative;
-  top: 70px;
+  top: 50px;
   align-items: flex-start; /* Aligns items to the top */
   width: 100%; /* Occupies full width */
 }
 
 .history {
-  width: 60%;
+  width: 55%;
 }
 
 .achievement {
-  width: 35%;
+  width: 45%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  background-color: #e6e6e6;
+  width: 110px;
+  margin: 4px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  height: 100px;
+}
+
+.icon-item h5 {
+  height: 14px;
+  font-size: 10px;
+}
+
+.icon-item img {
+  padding-top: 10px;
+  width: 70px;
 }
