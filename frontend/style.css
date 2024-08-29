@@ -1,0 +1,59 @@
+:root {
+    --bg-color: #053c54;
+    --main-color: #f45c2c;
+    --secondary: #e4d41c;
+    --tertiary: #7c4c44;
+    --white: #efefef;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: var(--lib);
+  }
+   
+   .header,.name,.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #303033;
+   }
+   .name h3{
+    margin-top: 4px;
+   }
+
+  .authBtn{
+  display:flex;
+  justify-content: space-between;
+  min-width: 450px;
+  top: 60px;
+  position: relative;
+  
+  }
+  .button img{
+    height: 25px;
+    width: 25px;
+    margin-right: 6px;
+   
+  }
+
+  .button{
+    align-items: center;
+    display:flex ;
+    background-color: #f45c2c;
+    color:var(--white);
+    height: 40px;
+    border-radius:12px;
+    padding: 20px 25px ;
+  }
+
+
+
+
