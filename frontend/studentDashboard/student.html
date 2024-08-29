@@ -125,16 +125,125 @@
                 <h4>Currently Borrowed Books</h4>
                 <a href="#"><span>See all</span></a>
               </div>
+              <div class="table-container">
+                <table class="book-table">
+                  <thead>
+                    <tr>
+                      <th>Book Title</th>
+                      <th>Genre</th>
+                      <th>Author</th>
+                      <th>Due Date</th>
+                      <th>Date Remaining</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>The Great Gatsby</td>
+                      <td>Fiction</td>
+                      <td>F. Scott Fitzgerald</td>
+                      <td>2024-09-15</td>
+                      <td>7 days</td>
+                      <td><button class="action-btn">Renew</button></td>
+                    </tr>
+                    <tr>
+                      <td>1984</td>
+                      <td>Dystopian</td>
+                      <td>George Orwell</td>
+                      <td>2024-09-20</td>
+                      <td>12 days</td>
+                      <td><button class="action-btn">Renew</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div class="reccomended">
+            <div class="recommended">
               <div class="head">
-                <h4>Currently Borrowed Books</h4>
+                <h4>Recommended Books</h4>
                 <img src="../../assets/refresh.png" alt="" class="reload" />
+              </div>
+              <div class="book-list">
+                <div class="book-item">
+                  <div class="book-image">
+                    <img src="../../assets/book1.png" alt="" />
+                  </div>
+                  <div class="book-info">
+                    <h5>Book name</h5>
+                    <p>Author</p>
+                    <p><span>Publication:</span>bpb</p>
+                    <p><span>Edition:</span>19th</p>
+                    <button class="action-btn">Check Availability</button>
+                  </div>
+                </div>
+                <div class="book-item">
+                  <div class="book-image">
+                    <img src="../../assets/book1.png" alt="" />
+                  </div>
+                  <div class="book-info">
+                    <h5>Book name</h5>
+                    <p>Author</p>
+                    <p><span>Publication:</span>bpb</p>
+                    <p><span>Edition:</span>19th</p>
+                    <button class="action-btn">Check Availability</button>
+                  </div>
+                </div>
+                <div class="book-item">
+                  <div class="book-image">
+                    <img src="../../assets/book1.png" alt="" />
+                  </div>
+                  <div class="book-info">
+                    <h5>Book name</h5>
+                    <p>Author</p>
+                    <p><span>Publication:</span>bpb</p>
+                    <p><span>Edition:</span>19th</p>
+                    <button class="action-btn">Check Availability</button>
+                  </div>
+                </div>
+                <div class="book-item">
+                  <div class="book-image">
+                    <img src="../../assets/book1.png" alt="" />
+                  </div>
+                  <div class="book-info">
+                    <h5>Book name</h5>
+                    <p>Author</p>
+                    <p><span>Publication:</span>bpb</p>
+                    <p><span>Edition:</span>19th</p>
+                    <button class="action-btn">Check Availability</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-container_2">
+            <div class="history">
+              <div class="head">
+                <h4>Reading History</h4>
+                <a href="#"><span>Last 6 months</span></a>
+              </div>
+              <div class="chart">
+                <canvas id="readingHistory"></canvas>
+              </div>
+            </div>
+            <div class="achievement">
+              <div class="head">
+                <h4>Achievements</h4>
+                <a href="#"><span>See all</span></a>
+              </div>
+              <div class="icons">
+                
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+      integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="student.js"></script>
   </body>
 </html>

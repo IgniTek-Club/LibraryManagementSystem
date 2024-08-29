@@ -109,7 +109,6 @@ body {
   align-items: center;
   height: 60px;
   cursor: pointer;
-  /* width: 100%; */
 }
 
 .menu-item h5 {
@@ -133,8 +132,8 @@ body {
 }
 
 .right-container {
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
 }
 
 .heading {
@@ -196,26 +195,65 @@ body {
   font-weight: 500;
 }
 
-.right-container_1 {
+/* .right-container_1 {
   display: flex;
   position: relative;
   top: 60px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .borrowed {
-  min-width: 50%;
-  align-items: center;
+  max-width: 60%;
+}
+
+.reccomended {
+  width: 40%;
+}
+
+.reccomended img {
+  width: 25px;
+  height: auto;
+}
+
+.head {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+} */
+
+.right-container_1 {
+  display: flex; /* Change to flex to arrange items horizontally */
+  position: relative;
+  top: 60px;
+  align-items: flex-start; /* Aligns items to the top */
+  width: 100%; /* Occupies full width */
+}
+
+.borrowed {
+  width: 55%; /* Allocates 55% width to the borrowed section */
+  margin-right: 40px; /* Adds space between borrowed and recommended */
+}
+
+.recommended {
+  width: 45%; /* Allocates 45% width to the recommended section */
 }
 
 .head {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
-.reload {
-  position: relative;
-  left: 100%;
+.recommended .head {
+  justify-content: space-between;
+}
+
+.recommended img {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
 }
 
 .head a {
@@ -225,14 +263,99 @@ body {
   left: 10px;
 }
 
-.reccomended {
-  width: 50%;
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse; /* Merges borders for a cleaner look */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-table thead {
+  background-color: #e0e0e0; /* Use your theme color */
+  color: #303030; /* Text color for header */
+}
+
+.book-table th,
+.book-table td {
+  padding: 8px;
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Adds a border below each cell */
+}
+
+.book-table tbody tr:hover {
+  background-color: #f1f1f1; /* Changes background color on hover */
+}
+
+.action-btn {
+  padding: 5px 10px;
+  background-color: #3cc941; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds button corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-item {
+  min-width: 48%;
+  padding: 10px;
+  background-color: #e6e6e6;
+  display: flex;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.book-info {
+  position: relative;
+  left: 10px;
+}
+
+.book-image img {
+  border-radius: 8px;
+  height: 100px;
+  width: auto;
+}
+
+.book-info p {
+  font-size: 12px;
+  height: 20px;
+}
+
+.book-info span {
+  font-weight: bold;
+}
+
+.book-info button {
+  padding: 3px 8px;
+}
+
+.right-container_2 {
   display: flex;
 }
 
-.reccomended img {
-  display: flex;
-  float: right;
-  width: 25px;
-  height: auto;
+.right-container_2 {
+  display: flex; /* Change to flex to arrange items horizontally */
+  position: relative;
+  top: 70px;
+  align-items: flex-start; /* Aligns items to the top */
+  width: 100%; /* Occupies full width */
+}
+
+.history {
+  width: 60%;
+}
+
+.achievement {
+  width: 35%;
 }
