@@ -1,36 +1,39 @@
-// Function to get the last N months
-function getLastNMonths(count) {
-  const labels = [];
-  const date = new Date();
-  
-  for (let i = 0; i < count; i++) {
-    const month = new Intl.DateTimeFormat('en', { month: 'short' }).format(date);
-    labels.unshift(month);
-    date.setMonth(date.getMonth() - 1);
-  }
+const ctx = document.getElementById("readingHistory").getContext("2d");
 
-  return labels;
-}
-
-// Ensure your code runs after the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
-  const labels = getLastNMonths(6);  // Get the last 6 months
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'Reading History',
-      data: [3, 5, 4, 6, 7, 4],
-      fill: true,
-      borderColor: 'rgb(244, 92, 44)',
-      pointBackgroundColor: 'rgb(244, 92, 44)',
-      pointBorderWidth: '2',
-      tension: 0.4
-    }]
-  };
-
-  const ctx = document.getElementById('readingHistory').getContext('2d');
-  new Chart(ctx, {
-    type: 'line',
-    data: data,
-  });
+const myLineChart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: ["January", "February", "March", "April", "May", "June"],
+    datasets: [
+      {
+        label: "Books Read",
+        data: [2, 5, 2, 5, 2, 3], // Sample data
+        fill: false,
+        borderColor: "rgba(241, 90, 40)",
+        tension: 0.3,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false, // Ensures the canvas adapts to its container
+    scales: {
+      x: {
+        display: true,
+        title: {
+          display: true,
+          text: "Month",
+        },
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          text: "Books Read",
+        },
+        beginAtZero: true, // Ensure the Y-axis starts at 0
+        suggestedMax: Math.max(...[4, 2, 5, 3, 2, 2]) + 1, // Add 1 to the max value in the data
+      },
+    },
+  },
 });
