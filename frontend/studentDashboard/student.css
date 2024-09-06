@@ -377,7 +377,7 @@ body {
   align-items: center;
   text-align: center;
   border-radius: 8px;
-  height: 100px;
+  height: 90px;
 }
 
 .icon-item h5 {
@@ -386,6 +386,13 @@ body {
 }
 
 .icon-item img {
-  padding-top: 10px;
-  width: 70px;
+  padding-top: 5px;
+  width: 65px;
+}
+
+.chart {
+  width: 80%;
+  height: 210px;
+  /* max-width: 600px;
+  height: 400px; */
 }
