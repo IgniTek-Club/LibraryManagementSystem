@@ -1,198 +1,198 @@
 :root {
-  --bg-color: #053c54;
-  --main-color: #f45c2c;
-  --secondary: #e4d41c;
-  --tertiary: #7c4c44;
-  --white: #efefef;
+	--bg-color: #053c54;
+	--main-color: #f45c2c;
+	--secondary: #e4d41c;
+	--tertiary: #7c4c44;
+	--white: #efefef;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  color: var(--lib);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	color: var(--lib);
 }
 
 body {
-  background-color: var(--white);
+	background-color: var(--white);
 }
 
 #logo {
-  width: 60px;
-  height: auto;
+	width: 60px;
+	height: auto;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .left-panel {
-  float: left;
-  background-color: var(--bg-color);
-  max-width: 200px;
-  color: var(--white);
+	float: left;
+	background-color: var(--bg-color);
+	max-width: 200px;
+	color: var(--white);
 }
 
 .right-panel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
-  color: #303030;
-  height: 100vh;
-  width: calc(100% - 200px);
-  float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white);
+	color: #303030;
+	height: 100vh;
+	width: calc(100% - 200px);
+	float: right;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  position: relative;
-  top: 10px;
-  padding-left: 5px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 10px;
+	padding-left: 5px;
 }
 
 .lib {
-  position: relative;
-  left: 8px;
+	position: relative;
+	left: 8px;
 }
 
 .lib h2 {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .profile {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  top: 60px;
-  padding-left: 6px;
-  cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	top: 60px;
+	padding-left: 6px;
+	cursor: pointer;
 }
 
 .photo {
-  background-color: var(--white);
-  border-radius: 50%;
+	background-color: var(--white);
+	border-radius: 50%;
 }
 
 .username {
-  left: 10px;
-  position: relative;
+	left: 10px;
+	position: relative;
 }
 
 #profile-photo {
-  width: 45px;
-  height: auto;
+	width: 45px;
+	height: auto;
 }
 
 .username p {
-  opacity: 0.5;
-  font-size: 14px;
+	opacity: 0.5;
+	font-size: 14px;
 }
 
 .option-list {
-  position: relative;
-  top: 120px;
-  padding-left: 10px;
+	position: relative;
+	top: 120px;
+	padding-left: 10px;
 }
 
 .menu-item {
-  display: flex;
-  position: relative;
-  align-items: center;
-  height: 60px;
-  cursor: pointer;
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: 60px;
+	cursor: pointer;
 }
 
 .menu-item h5 {
-  font-size: 14px;
-  position: relative;
-  left: 15px;
+	font-size: 14px;
+	position: relative;
+	left: 15px;
 }
 
 .menu-item img {
-  width: 38px;
-  height: auto;
+	width: 38px;
+	height: auto;
 }
 
 .menu-item:nth-child(5),
 .menu-item:nth-child(6) {
-  top: 100px;
+	top: 100px;
 }
 
 .menu-item:nth-child(6) img {
-  width: 37px;
+	width: 37px;
 }
 
 .right-container {
-  width: 95%;
-  height: 95%;
+	width: 95%;
+	height: 95%;
 }
 
 .heading {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .selection {
-  position: relative;
-  left: 20px;
+	position: relative;
+	left: 20px;
 }
 
 .selection select {
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  font-size: 15px;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 15px;
 }
 
 .selection option {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  font-size: 15px; /* Change the font size of the options */
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	font-size: 15px; /* Change the font size of the options */
 }
 
 .activity-bar {
-  width: 100%;
-  height: 75px;
-  display: flex;
-  position: relative;
-  top: 20px;
-  border-radius: 8px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: 100%;
+	height: 75px;
+	display: flex;
+	position: relative;
+	top: 20px;
+	border-radius: 8px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .bar-item {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
 }
 
 .bar-item img {
-  width: 50px;
-  height: auto;
+	width: 50px;
+	height: auto;
 }
 
 .image img {
-  padding: 7px;
-  border-radius: 10%;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+	padding: 7px;
+	border-radius: 10%;
+	box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
 .info {
-  position: relative;
-  left: 10px;
+	position: relative;
+	left: 10px;
 }
 .info h4 {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 /* .right-container_1 {
@@ -224,175 +224,175 @@ body {
 } */
 
 .right-container_1 {
-  display: flex; /* Change to flex to arrange items horizontally */
-  position: relative;
-  top: 40px;
-  align-items: flex-start; /* Aligns items to the top */
-  width: 100%; /* Occupies full width */
+	display: flex; /* Change to flex to arrange items horizontally */
+	position: relative;
+	top: 40px;
+	align-items: flex-start; /* Aligns items to the top */
+	width: 100%; /* Occupies full width */
 }
 
 .borrowed {
-  width: 55%; /* Allocates 55% width to the borrowed section */
-  margin-right: 40px; /* Adds space between borrowed and recommended */
+	width: 55%; /* Allocates 55% width to the borrowed section */
+	margin-right: 40px; /* Adds space between borrowed and recommended */
 }
 
 .recommended {
-  width: 45%; /* Allocates 45% width to the recommended section */
+	width: 45%; /* Allocates 45% width to the recommended section */
 }
 
 .head {
-  display: flex;
-  align-items: center;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	width: 100%;
 }
 
 .recommended .head {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 
 .recommended img {
-  width: 25px;
-  height: auto;
-  cursor: pointer;
+	width: 25px;
+	height: auto;
+	cursor: pointer;
 }
 
 .head a {
-  color: var(--main-color);
-  text-decoration: none;
-  position: relative;
-  left: 10px;
+	color: var(--main-color);
+	text-decoration: none;
+	position: relative;
+	left: 10px;
 }
 
 .table-container {
-  width: 100%;
-  overflow-x: auto;
-  margin-top: 20px;
-  font-size: 12px;
+	width: 100%;
+	overflow-x: auto;
+	margin-top: 20px;
+	font-size: 12px;
 }
 
 .book-table {
-  width: 100%;
-  border-collapse: collapse; /* Merges borders for a cleaner look */
-  border-radius: 8px;
-  overflow: hidden;
+	width: 100%;
+	border-collapse: collapse; /* Merges borders for a cleaner look */
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 .book-table thead {
-  background-color: #e0e0e0; /* Use your theme color */
-  color: #303030; /* Text color for header */
+	background-color: #e0e0e0; /* Use your theme color */
+	color: #303030; /* Text color for header */
 }
 
 .book-table th,
 .book-table td {
-  padding: 8px;
-  text-align: left; /* Align text to the left */
-  border-bottom: 1px solid #ddd; /* Adds a border below each cell */
+	padding: 8px;
+	text-align: left; /* Align text to the left */
+	border-bottom: 1px solid #ddd; /* Adds a border below each cell */
 }
 
 .book-table tbody tr:hover {
-  background-color: #f1f1f1; /* Changes background color on hover */
+	background-color: #f1f1f1; /* Changes background color on hover */
 }
 
 .action-btn {
-  padding: 5px 10px;
-  background-color: #3cc941; /* Button background color */
-  color: #ffffff; /* Button text color */
-  border: none; /* Removes default border */
-  border-radius: 5px; /* Rounds button corners */
-  cursor: pointer; /* Changes cursor to pointer on hover */
+	padding: 5px 10px;
+	background-color: #3cc941; /* Button background color */
+	color: #ffffff; /* Button text color */
+	border: none; /* Removes default border */
+	border-radius: 5px; /* Rounds button corners */
+	cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .book-list {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .book-item {
-  min-width: 48%;
-  padding: 10px;
-  background-color: #e6e6e6;
-  display: flex;
-  margin: 5px;
-  border-radius: 8px;
+	min-width: 48%;
+	padding: 10px;
+	background-color: #e6e6e6;
+	display: flex;
+	margin: 4px;
+	border-radius: 8px;
 }
 
 .book-info {
-  position: relative;
-  left: 10px;
+	position: relative;
+	left: 10px;
 }
 
 .book-image img {
-  border-radius: 8px;
-  height: 90px;
-  width: auto;
+	border-radius: 8px;
+	height: 100px;
+	width: auto;
 }
 
 .book-info p {
-  font-size: 12px;
-  height: 20px;
+	font-size: 12px;
+	height: 20px;
 }
 
 .book-info span {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .book-info button {
-  padding: 3px 8px;
+	padding: 3px 8px;
 }
 
 .right-container_2 {
-  display: flex;
+	display: flex;
 }
 
 .right-container_2 {
-  display: flex; /* Change to flex to arrange items horizontally */
-  position: relative;
-  top: 50px;
-  align-items: flex-start; /* Aligns items to the top */
-  width: 100%; /* Occupies full width */
+	display: flex; /* Change to flex to arrange items horizontally */
+	position: relative;
+	top: 50px;
+	align-items: flex-start; /* Aligns items to the top */
+	width: 100%; /* Occupies full width */
 }
 
 .history {
-  width: 55%;
+	width: 55%;
 }
 
 .achievement {
-  width: 45%;
+	width: 45%;
 }
 
 .icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .icon-item {
-  display: flex;
-  flex-direction: column;
-  padding: 1px;
-  background-color: #e6e6e6;
-  width: 110px;
-  margin: 4px;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  border-radius: 8px;
-  height: 90px;
+	display: flex;
+	flex-direction: column;
+	padding: 1px;
+	background-color: #e6e6e6;
+	width: 110px;
+	margin: 4px;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	border-radius: 8px;
+	height: 90px;
 }
 
 .icon-item h5 {
-  height: 14px;
-  font-size: 10px;
+	height: 14px;
+	font-size: 10px;
 }
 
 .icon-item img {
-  padding-top: 5px;
-  width: 65px;
+	padding-top: 5px;
+	width: 65px;
 }
 
 .chart {
-  width: 80%;
-  height: 210px;
-  /* max-width: 600px;
+	width: 80%;
+	height: 210px;
+	/* max-width: 600px;
   height: 400px; */
 }
