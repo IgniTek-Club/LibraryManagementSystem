@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="auth.css" />
-    <title>LMS</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="left-panel">
-        <div class="vu-logo">
-          <img src="../../assets/VU-logo.webp" alt="VU-logo" id="vu-logo" />
-        </div>
-        <div class="welcome-text">
-          <h2>Welcome to Vishwakarma Library</h2>
-        </div>
-        <div class="welcome-image">
-          <img src="../../assets/welcome2.png" alt="students-in-lib" />
-        </div>
-      </div>
-    </div>
-    <div class="right-panel">
-      <div class="form-section">
-        <h1>Login Now</h1>
-        <form
-          action="https://api.form-data.com/f/bqtxth46icif4r4ot1p5qn"
-          method="post"
-        >
-          <div class="input-group">
-            <div class="input-field">
-              <div class="form-item">
-                <input type="text" id="email" required />
-                <label for="email">Email</label>
-              </div>
-            </div>
-            <div class="input-field">
-              <div class="form-item">
-                <input type="password" id="password" required />
-                <label for="password">Password</label>
-                <span class="password-toggle-icon"
-                  ><i class="fas fa-eye"></i
-                ></span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="g-recaptcha"
-            data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"
-          ></div>
-          <p>Already have an account? <a href="signUp.html">Create Now</a></p>
-          <button type="submit">Login Now</button>
-        </form>
-      </div>
-      <div class="policy">
-        <a href="#">Privacy & policy</a><span class="circle"></span
-        ><a href="#">Terms & Conditions</a>
-      </div>
-    </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="auth.js"></script>
-    <style>
-      .input-field {
-        grid-template: auto !important;
-      }
-      .input-group input {
-        width: 892px !important;
-      }
-      .input-field {
-        display: block !important;
-      }
-      .form-item {
-        min-width: 892px !important;
-      }
-      .password-toggle-icon i {
-        margin-bottom: 0 !important;
-      }
-    </style>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="auth.css" />
+		<title>LMS</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left-panel">
+				<div class="vu-logo">
+					<img src="../../assets/VU-logo.webp" alt="VU-logo" id="vu-logo" />
+				</div>
+				<div class="welcome-text">
+					<h2>Welcome to Vishwakarma Library</h2>
+				</div>
+				<div class="welcome-image">
+					<img src="../../assets/welcome2.png" alt="students-in-lib" />
+				</div>
+			</div>
+		</div>
+		<div class="right-panel">
+			<div class="form-section">
+				<h1>Login Now</h1>
+				<form
+					action="https://api.form-data.com/f/bqtxth46icif4r4ot1p5qn"
+					method="post"
+				>
+					<div class="input-group">
+						<div class="input-field">
+							<div class="form-item">
+								<input type="text" id="email" required />
+								<label for="email">Email</label>
+							</div>
+						</div>
+						<div class="input-field">
+							<div class="form-item">
+								<input type="password" id="password" required />
+								<label for="password">Password</label>
+								<span class="password-toggle-icon"
+									><i class="fas fa-eye"></i
+								></span>
+							</div>
+						</div>
+					</div>
+					<div
+						class="g-recaptcha"
+						data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"
+					></div>
+					<p>Already have an account? <a href="signUp.html">Create Now</a></p>
+					<button type="submit">Login Now</button>
+				</form>
+			</div>
+			<div class="policy">
+				<a href="#">Privacy &amp; policy</a><span class="circle"></span
+				><a href="#">Terms &amp; Conditions</a>
+			</div>
+		</div>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="auth.js"></script>
+		<style>
+			.input-field {
+				grid-template: auto !important;
+			}
+			.input-group input {
+				width: 892px !important;
+			}
+			.input-field {
+				display: block !important;
+			}
+			.form-item {
+				min-width: 892px !important;
+			}
+			.password-toggle-icon i {
+				margin-bottom: 0 !important;
+			}
+		</style>
+	</body>
 </html>
